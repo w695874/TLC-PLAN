@@ -1,0 +1,16 @@
+chamfer-distance @ git+https://github.com/otaheri/chamfer_distance@dc9987dcf70888d387d96893ba1fb9ba9a333992
+h5py
+matplotlib
+meshio
+numpy
+opencv-python
+Pillow
+plyfile
+scipy
+tensorboard
+tqdm
+trimesh
+gdown
+
+chamfer-distance
+wrapt==1.16.0
