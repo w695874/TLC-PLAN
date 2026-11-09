@@ -1,18 +1,16 @@
 
 
-# Hierarchical Neural Coding for Controllable CAD Model Generation (ICML 2023)
+# TLC-Plan: A Two-Level Codebook Based Network for End-to-End Vector Floorplan Generation (Eurographics 2026)
 
-[![arXiv](https://img.shields.io/badge/📃-arXiv%20-red.svg)](https://arxiv.org/abs/2307.00149)
-[![webpage](https://img.shields.io/badge/🌐-Website%20-blue.svg)](https://hnc-cad.github.io) 
-[![Youtube](https://img.shields.io/badge/📽️-Video%20-orchid.svg)](https://www.youtube.com/watch?v=1XVUJIKioO4)
+[![arXiv](https://img.shields.io/badge/📃-arXiv%20-red.svg)](https://arxiv.org/abs/2602.07100)
+[![webpage](https://img.shields.io/badge/🌐-Website%20-blue.svg)](https://onlinelibrary.wiley.com/doi/10.1111/cgf.70360) 
 
-*[Xiang Xu](https://samxuxiang.github.io/), [Pradeep Kumar Jayaraman](https://www.research.autodesk.com/people/pradeep-kumar-jayaraman/), [Joseph G. Lambourne](https://www.research.autodesk.com/people/joseph-george-lambourne/), [Karl D.D. Willis](https://www.karlddwillis.com/), [Yasutaka Furukawa](https://www.cs.sfu.ca/~furukawa/)*
 
-![alt HNCode](resources/teaser.png)
+Biao Xiong, Zhen Peng, Ping Wang, Qiegen Liu, Xian Zhong
 
-> We present a novel generative model for
-Computer Aided Design (CAD) that 1) represents high-level design concepts of a CAD model as a
-three-level hierarchical tree of neural codes, from global part arrangement down to local curve geometry; and 2) controls the generation of CAD models by specifying the target design using a code tree. Our method supports diverse and higher-quality generation; novel user controls while specifying design intent; and autocompleting a partial CAD model under construction.
+![image-20260105125726246](assets/image-20260105125726246.png)
+
+> Automated floorplan generation aims to improve design quality, architectural efficiency, and sustainability by jointly modeling global spatial organization and precise geometric detail. However, existing approaches operate in raster space and rely on post hoc vectorization, which introduces structural inconsistencies and hinders end-to-end learning. Motivated by compositional spatial reasoning, we propose TLC-Plan, a hierarchical generative model that directly synthesizes vector floorplans from input boundaries, aligning with human architectural workflows based on modular and reusable patterns. TLC-Plan employs a two-level VQ-VAE to encode global layouts as semantically labeled room bounding boxes and to refine local geometries using polygon-level codes. This hierarchy is unified in a CodeTree representation, while an autoregressive transformer samples codes conditioned on the boundary to generate diverse and topologically valid designs, without requiring explicit room topology or dimensional priors. Extensive experiments show state-of-the-art performance on RPLAN dataset (FID = 1.84, MSE = 2.06) and leading results on LIFULL dataset. The proposed framework advances constraint-aware and scalable vector floorplan generation for real-world architectural applications. 
 
 
 ## Requirements
